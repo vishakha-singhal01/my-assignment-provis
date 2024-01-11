@@ -1,4 +1,4 @@
-**# ShipUp **
+# ShipUp 
 
 Quick and Reliable Warehousing and Logistics Solutions
 
