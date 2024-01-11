@@ -1,10 +1,4 @@
-/**
-* Template Name: FlexStart
-* Updated: Jan 09 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+/**Provis Technology Work*/
 
 /*--------------------------------------------------------------
 # General
@@ -391,6 +385,11 @@ h6 {
 
   .hero .hero-img img {
     width: 80%;
+  }
+
+  .frame{
+    width: 80%;
+    margin-bottom: 10px;
   }
 }
 
