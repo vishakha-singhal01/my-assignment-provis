@@ -31,6 +31,9 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
+#btn{
+  background-color: #2C2D5B;
+}
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -72,8 +75,6 @@ h6 {
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
-
-
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -306,7 +307,6 @@ h6 {
 .navbar-mobile .getstarted:focus {
   margin: 15px;
 }
-
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
@@ -366,6 +366,46 @@ h6 {
   text-align: right;
 }
 
+form {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: -1px 4px 20px 14px rgba(212, 209, 209, 0.2);
+  color: black;
+  
+}
+
+fieldset.detail {
+  border: 1px groove #ddd;
+  border-radius: 10px;
+  padding: 0 1.4em 1.4em 1.4em;
+  margin: 0 0 1.5em 0;
+  -webkit-box-shadow: 0px 0px 0px 0px #000;
+  box-shadow: 0px 0px 0px 0px #000;
+  margin-top: 30px;
+}
+form .btn {
+      background-color: #2C2D5B;
+      border-radius: 10px;
+      width: 15rem;
+      height: 4rem;
+      margin-top: 0.5em;
+}
+legend.detail {
+  font-size: 1.2em;
+  text-align: left;
+  width: auto;
+  padding: 0 10px;
+  border-bottom: none;
+  margin-top: -15px;
+  background-color: white;
+  color: black;
+}
+
+
 @media (min-width: 1024px) {
   .hero {
     background-attachment: fixed;
@@ -378,6 +418,17 @@ h6 {
     padding: 120px 0 60px 0;
   }
 
+
+/* Custom styles for the left and right sides */
+.left-side {
+    float: left;
+    width: 50%;
+}
+
+.right-side {
+    float: right;
+    width: 50%;
+}
   .hero .hero-img {
     text-align: center;
     margin-top: 80px;
@@ -391,6 +442,17 @@ h6 {
     width: 80%;
     margin-bottom: 10px;
   }
+
+  form {
+    flex-direction: column; 
+    align-items: center; 
+}
+
+form .btn {
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
 }
 
 @media (max-width: 768px) {
@@ -409,6 +471,16 @@ h6 {
   .hero .hero-img img {
     width: 100%;
   }
+  
+  form {
+    flex-direction: column; 
+    align-items: center; 
+}
+
+form .btn {
+    width: 100%;
+    margin-bottom: 20px;
+}
 }
 
 

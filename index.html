@@ -40,7 +40,7 @@
         <ul> 
           <li class="dropdown"><a href="#"><span>Company</span> <i class="bi bi-chevron-down"></i></a> 
             <ul> 
-              <img src="assets/img/Frame 7027.png" alt="">
+              <img class="img" src="assets/img/Frame 7027.png" alt="">
             </ul> 
           </li> 
           <li><a class="nav-link scrollto" href="#">Services</a></li> 
@@ -49,13 +49,14 @@
           <li><a class="nav-link scrollto" href="#">Insights</a></li> 
           <li><a class="me-3" href="#">News & Media</a></li> 
           <button type="button" class="btn btn-outline-primary me-3">Request Quote</button> 
-          <button type="button" class="btn btn-primary">Join now</button> 
+          <button type="button" id="btn" class="btn btn-primary">Join now</button> 
         </ul> 
         <i class="bi bi-list mobile-nav-toggle"></i> 
-      </nav><!-- .navbar --> 
+      </nav>
  
     </div> 
-  </header> <!-- End Header -->
+  </header> 
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
 
@@ -63,14 +64,18 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
+        <div class="col-lg-6 d-flex flex-column justify-content-center mt-5">
           
           <h1 data-aos="fade-up">Quick and Reliable <span>Warehousing and Logistic</span> Solution</h1>
           <h6 data-aos="fade-up" data-aos-delay="400">ShipUp delivers an unparalleled customer service through dedicated customer teams, engaged people working in an agile culture, and a global footprint</h6>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-                <button type="button" class="btn btn-primary">Join now</button>
-                <button  type="button" class="btn btn-primary"><i class="bi bi-camera-video-fill"></i> Play Demo</button>
+                <button type="button" id="btn" class="btn btn-primary">Join now</button>
+                <a href="https://www.youtube.com/watch?v=R_XUVEEZAOg
+                " target="_blank" id="btn" class="btn btn-primary" role="button">
+                  <i class="bi bi-camera-video-fill"></i> Play Demo
+              </a>
+              
 
             </div>
           </div>
@@ -78,11 +83,36 @@
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
           <img src="assets/img/hero-img.png" class="img-fluid" alt="">
         </div>
-        <div>
-          <img class="frame" src="assets/img/Frame 6923.png" alt="">
-        </div>
+
+        <!-- input fields start -->
+          <form class="form mt-5" data-aos="zoom-out" data-aos-delay="200">
+            <div class="container">
+              <fieldset class="detail">
+                  <legend class="detail">Origin</legend>
+                  <h5><i class="bi bi-geo-alt-fill"></i> Enter Location</h5>
+              </fieldset>
+          </div>
+
+            <div class="container">
+              <fieldset class="detail">
+                  <legend class="detail">Destination</legend>
+                  <h5><i class="bi bi-geo-alt-fill"></i> Enter Location</h5>
+              </fieldset>
+          </div>
+
+         <div class="container">
+          <fieldset class="detail">
+              <legend class="detail">Weight</legend>
+              <h5><i class="bi bi-bag-fill"></i> Weight in Kg</h5>
+          </fieldset>
       </div>
-      
+           
+         <div class="text-center text-lg-start mt-4">
+          <button type="button" class="btn btn-primary">Check Price</button>
+         </div>
+
+            </form>
+      <!-- input fields end -->
     </div>
   </section><!-- End Hero -->
 
