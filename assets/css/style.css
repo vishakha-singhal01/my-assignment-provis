@@ -184,30 +184,65 @@ h6 {
   visibility: visible;
 }
 
-.navbar .megamenu {
-  position: static;
+.mega-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: -1px 4px 20px 14px rgba(212, 209, 209, 0.2);
+  width: 600px; /* Adjust the width as needed */
+  padding: 20px;
+  z-index: 1;
 }
 
-.navbar .megamenu ul {
-  margin-top: 5px;
-  right: 0;
-  padding: 10px;
+.mega-menu .left-side,
+.mega-menu .right-side {
+  float: left;
+  width: 50%;
+}
+
+.mega-menu .left-side h4{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mega-menu .right-side h4{
+  font-weight: bold;
+}
+
+.mega-menu .left-side ul h5{
+  font-weight: bold;
+}
+
+.mega-menu .left-side ul p{
+  font-weight: normal;
+}
+
+.mega-menu .learn{
+  color: #F67366;
+}
+
+.mega-menu img {
+  max-width: 100%;
+  height: auto;
+}
+
+.icon-container {
   display: flex;
+  align-items: center;
 }
 
-.navbar .megamenu ul li {
-  flex: 1;
-}
+.icon-container i {
+      margin-right: 10px; 
+      font-size: 1.5rem; 
+      color: #F67366; 
+  }
 
-.navbar .megamenu ul li a,
-.navbar .megamenu ul li:hover>a {
-  color: #013289;
-}
-
-.navbar .megamenu ul li a:hover,
-.navbar .megamenu ul li .active,
-.navbar .megamenu ul li .active:hover {
-  color: #4154f1;
+/* Show the mega menu on hover */
+.dropdown:hover .mega-menu {
+  display: block;
 }
 
 .navbar .dropdown .dropdown ul {
@@ -297,16 +332,6 @@ h6 {
   color: #012970;
 }
 
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover>a {
-  color: #4154f1;
-}
-
-.navbar-mobile .getstarted,
-.navbar-mobile .getstarted:focus {
-  margin: 15px;
-}
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
